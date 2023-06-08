@@ -3,4 +3,5 @@
     <string name="btnMostrar">Mostrar Datos</string>
     <string name="btnInsertar">Insertar Datos</string>
     <string name="lista_de_personas">Lista de personas</string>
+    <string name="btnFotos">Tomar Foto</string>
 </resources>
