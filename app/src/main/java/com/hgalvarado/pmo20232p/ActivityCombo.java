@@ -35,7 +35,6 @@ public class ActivityCombo extends AppCompatActivity {
         nombres= (EditText) findViewById(R.id.cbNombre);
         apellidos= (EditText) findViewById(R.id.cbApellido);
         correo= (EditText) findViewById(R.id.cbCorreo);
-
         obtenerTabla();
 
         ArrayAdapter<CharSequence> adp = new ArrayAdapter(this, android.R.layout.simple_spinner_item,listaPersonas);

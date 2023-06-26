@@ -4,14 +4,12 @@
 
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-feature
-        android:name="android.hardware.Camera"
+        android:name="android.hardware.camera"
         android:required="true" />
     <uses-feature
         android:name="android.hardware.camera2"
         android:required="true" />
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="true" />
+
 
     <queries>
         <!-- Browser -->
@@ -66,6 +64,19 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.hgalvarado.pmo20232p.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+
     </application>
 
 </manifest>

@@ -51,13 +51,8 @@ public class ActivityCrear extends AppCompatActivity {
         Long result = db.insert(Transacciones.tablePersonas,Transacciones.id,valores);
         Toast.makeText(getApplicationContext(), "Registro ingresado: " + result.toString(),Toast.LENGTH_LONG).show();
 
-
-
         db.close();
         CleanScreen();
-
-
-
     }
 
     private void CleanScreen() {

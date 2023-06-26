@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class ActivityPrincipal extends AppCompatActivity {
 
-    Button btnCreate, btnList, btnCombo;
+    Button btnCreate, btnList, btnCombo,btnActivityFoto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,8 @@ public class ActivityPrincipal extends AppCompatActivity {
         btnList = (Button) findViewById(R.id.btnMostrarLista);
         btnCreate = (Button) findViewById(R.id.btnCrearPersona);
         btnCombo = (Button) findViewById(R.id.btnCombo);
+        btnActivityFoto = (Button) findViewById(R.id.btnActivyFoto);
+
 
 
         btnCreate.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +42,13 @@ public class ActivityPrincipal extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), ActivityCombo.class);
+                startActivity(intent);
+            }
+        });
+        btnActivityFoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ActivityFoto.class);
                 startActivity(intent);
             }
         });
