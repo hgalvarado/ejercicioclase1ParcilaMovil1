@@ -86,4 +86,6 @@ public class ActivityList extends AppCompatActivity {
                     );
         }
     }
+
+    //Probando desde la linea de comando
 }
